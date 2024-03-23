@@ -9,3 +9,10 @@ router = APIRouter(tags=["UI"])
 async def show_home():
     htmldireccion = "./html/juego.html"
     return FileResponse(htmldireccion)
+
+
+
+@router.get("/ui/home2", response_class=HTMLResponse)
+async def show_home():
+    htmldireccion = "./html/juego.html"
+    return FileResponse(htmldireccion)
