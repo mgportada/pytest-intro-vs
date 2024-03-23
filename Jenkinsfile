@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Deploy Docker Container') {
             steps {
-                bat 'docker run -d --name mi-contenedor-fastapi -p 8001:8000 mi-servicio-fastapi'
+                bat 'docker run -d --rm --name mi-contenedor-fastapi -p 8001:8000 mi-servicio-fastapi'
             }
         }
     }
