@@ -4,7 +4,7 @@ from fastapi.responses import RedirectResponse
 from fastapi import FastAPI
 import routers
 
-host = os.environ.get("host", "localhost")
+host = os.environ.get("host", "0.0.0.0")
 port = int(os.environ.get("port", "8000"))
 
 
